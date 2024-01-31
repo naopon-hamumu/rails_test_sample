@@ -4,8 +4,8 @@ require "rails/test_help"
 
 class ActiveSupport::TestCase
   # Run tests in parallel with specified workers
-  parallelize(workers: :number_of_processors)
-  # parallelize(workers: 1) # テストの並列度を指定
+  # parallelize(workers: :number_of_processors)
+  parallelize(workers: 1) # テストの並列度を指定
 
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
