@@ -2,7 +2,7 @@ require "test_helper"
 
 class TodosControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @todo = todos(:one)
+    @todo = todos(:one) # モデル名s(:fixture名)でデータを参照する
   end
 
   test "should get index" do
