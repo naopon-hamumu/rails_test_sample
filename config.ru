@@ -7,6 +7,8 @@
 
 require "rack"
 require_relative "app"
+require_relative "simple_middleware"
 
 use Rack::Runtime # リクエストを受けとってからレスポンスを返すまでの時間をレスポンスヘッダーに追加
+use SimpleMiddleware
 run App.new
