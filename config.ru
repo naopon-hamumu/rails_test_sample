@@ -8,4 +8,5 @@
 require "rack"
 require_relative "app"
 
+use Rack::Runtime # リクエストを受けとってからレスポンスを返すまでの時間をレスポンスヘッダーに追加
 run App.new
